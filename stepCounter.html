@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step Counter</title>
+    <style>
+        body {
+            display: inline-block;
+        }
+        
+        div {
+            width: 200px;
+            height: 40px;
+            position: relative;
+            background: red;
+        }
+        
+        div:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid white;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+        
+        div:before {
+            content: "";
+            position: absolute;
+            right: -20px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid red;
+            border-top: 20px solid transparent;
+            border-bottom: 20px solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Шаг 1</p>
+    </div>
+    <div>
+        <p>Шаг 2</p>
+    </div>
+    <div>
+        <p>Шаг 3</p>
+    </div>
+    <div>
+        <p>Шаг 4</p>
+    </div>
+
+</body>
+
+</html>

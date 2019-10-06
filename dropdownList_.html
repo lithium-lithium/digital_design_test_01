@@ -40,8 +40,6 @@
             position: relative;
         }
         
-        .topmenu li {}
-        
         p {
             cursor: pointer;
             border-radius: 5px;
@@ -57,7 +55,6 @@
         
         .topmenu li:hover .submenu {
             display: block;
-            box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.28);
         }
         
         .submenu {
@@ -72,6 +69,12 @@
             padding: 5px;
         }
         
+        .submenu:hover .block {
+            box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.28);
+            background-color: rgb(255, 255, 255);
+            display: block;
+        }
+        
         .submenu li:hover {
             background-color: rgb(128, 128, 238);
             border-radius: 0px;
@@ -81,10 +84,28 @@
         .submenu li a:hover {
             color: rgb(255, 255, 255);
         }
+        
+        .block {
+            display: none;
+            justify-content: space-around;
+            width: 200px;
+            margin-left: 40px;
+            position: absolute;
+        }
+        
+        .block div {
+            background-color: rgb(255, 255, 255);
+            width: 130px;
+            height: 130px;
+        }
     </style>
 </head>
 
 <body>
+    <div class="block">
+        <div></div>
+        <div></div>
+    </div>
     <div class="menu inline">
         <ul class="topmenu">
             <li>
